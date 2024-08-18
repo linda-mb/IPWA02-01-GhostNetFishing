@@ -25,9 +25,9 @@ public class GeisternetzMeldenController implements Serializable {
 	}
 
 	public void meldeGeisternetz() {
-		neuesGeisternetz.setStatus(Geisternetz.GEMELDET); // Set status to "Gemeldet"
+		neuesGeisternetz.setStatus(Geisternetz.GEMELDET);
 		geisternetzVerwaltung.saveGeisternetz(neuesGeisternetz);
-		this.neuesGeisternetz = new Geisternetz(); // Reset form
+		this.neuesGeisternetz = new Geisternetz();
 		FacesContext.getCurrentInstance().addMessage("growl-success", new FacesMessage(FacesMessage.SEVERITY_INFO,
 				"Geisternetz erfolgreich gemeldet.", "Das gemeldete Netz ist ab sofort für die Bergung verfügbar."));
 	}

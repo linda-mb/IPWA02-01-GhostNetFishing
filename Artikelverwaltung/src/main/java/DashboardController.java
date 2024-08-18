@@ -29,7 +29,6 @@ public class DashboardController implements Serializable {
         this.selectedGeisternetze = selectedGeisternetze;
     }
     
-    // Fetch geisternetze in bergung status for the logged-in user
     public List<Geisternetz> getGeisternetzeInBergungByBooking() {
         Person loggedInPerson = loginController.getLoggedInPerson();
         if (loggedInPerson == null) {

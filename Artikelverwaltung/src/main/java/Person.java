@@ -13,13 +13,13 @@ public class Person implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String vorname;
 	private String nachname;
 	private String telefonnummer;
 
-	@Column(name = "buchungsnummer", nullable = false, unique = true)
+	@Column(nullable = false, unique = true)
 	private String buchungsnummer;
 
 	@OneToMany(mappedBy = "person")

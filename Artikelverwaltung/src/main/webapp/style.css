@@ -119,3 +119,9 @@ td.nr {
 #loginForm .ui-panelgrid-cell {
 	background-color: #eee;
 }
+
+@media (max-width: 1024px) {
+	.ui-md-4 {
+		width: 100%;
+	}
+}

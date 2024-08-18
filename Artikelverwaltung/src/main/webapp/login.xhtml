@@ -26,8 +26,8 @@
 				<h:inputText id="buchungsnr"
 					value="#{loginController.buchungsnummer}" required="true"
 					validator="#{loginController.validateLogin}" size="25" />
-				<p:commandButton value="Abbrechen" styleClass="ui-button-secondary"
-					onclick="window.history.back();" />
+				<p:linkButton value="Abbrechen" styleClass="ui-button-secondary"
+					 outcome="index"/>
 				<p:commandButton value="Login" action="#{loginController.login()}"
 					update="messages" />
 			</h:panelGrid>

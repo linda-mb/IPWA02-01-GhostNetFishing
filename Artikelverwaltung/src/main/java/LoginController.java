@@ -80,6 +80,6 @@ public class LoginController implements Serializable {
 		if (loggedInPerson != null) {
 			return "dashboardBergendePerson.xhtml?faces-redirect=true";
 		}
-		return null;
+		return "login.xthml";
 	}
 }
